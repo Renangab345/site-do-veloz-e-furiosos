@@ -1,89 +1,227 @@
+Aqui está um site completo sobre Velozes e Furiosos 1 em um único arquivo HTML com vídeo e resumo:
+
+```html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Velozes e Furiosos</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velozes e Furiosos 1 - O Filme Original</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, #d50000, #b71c1c);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .movie-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .poster {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .poster img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            border: 3px solid #d50000;
+        }
+        
+        .details {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #d50000;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #d50000;
+            padding-bottom: 0.5rem;
+        }
+        
+        .video-container {
+            margin: 3rem 0;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .synopsis {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .synopsis p {
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            color: #d50000;
+            font-weight: bold;
+        }
+        
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .fact-card {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #d50000;
+        }
+        
+        .fact-card h3 {
+            color: #d50000;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .movie-info {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
-  <!-- Header -->
-  <header class="bg-black p-5 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-yellow-400">Velozes & Furiosos</h1>
-      <nav class="space-x-4">
-        <a href="#personagens" class="hover:text-yellow-400">Personagens</a>
-        <a href="#trailers" class="hover:text-yellow-400">Trailers</a>
-        <a href="#carros" class="hover:text-yellow-400">Carros</a>
-      </nav>
+<body>
+    <header>
+        <h1>Velozes e Furiosos</h1>
+        <p class="tagline">O filme que deu início à maior franquia automotiva do cinema</p>
+    </header>
+    
+    <div class="container">
+        <section class="movie-info">
+            <div class="poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg" alt="Poster de Velozes e Furiosos">
+            </div>
+            
+            <div class="details">
+                <h2 class="section-title">Informações</h2>
+                <p><span class="highlight">Título original:</span> The Fast and the Furious</p>
+                <p><span class="highlight">Ano de lançamento:</span> 2001</p>
+                <p><span class="highlight">Diretor:</span> Rob Cohen</p>
+                <p><span class="highlight">Elenco principal:</span> Vin Diesel, Paul Walker, Michelle Rodriguez, Jordana Brewster</p>
+                <p><span class="highlight">Gênero:</span> Ação, Crime</p>
+                <p><span class="highlight">Duração:</span> 106 minutos</p>
+                <p><span class="highlight">Orçamento:</span> US$ 38 milhões</p>
+                <p><span class="highlight">Bilheteria:</span> US$ 207 milhões</p>
+            </div>
+        </section>
+        
+        <section class="video-container">
+            <h2 class="section-title">Trailer Oficial</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/2TAOizOnNSo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="synopsis">
+            <h2 class="section-title">Sinopse</h2>
+            <p>Em <span class="highlight">Velozes e Furiosos</span>, o policial <span class="highlight">Brian O'Conner</span> (Paul Walker) é enviado para Los Angeles para se infiltrar no mundo das corridas ilegais de rua como parte de uma investigação sobre uma série de roubos de caminhões.</p>
+            
+            <p>Brian se aproxima de <span class="highlight">Dominic Toretto</span> (Vin Diesel), o líder de uma gangue de corredores de rua suspeita de estar envolvida nos roubos. Para ganhar a confiança de Dom, Brian se envolve cada vez mais no mundo das corridas ilegais, desenvolvendo um relacionamento com a irmã de Dom, <span class="highlight">Mia</span> (Jordana Brewster), e um respeito mútuo com o próprio Dom.</p>
+            
+            <p>O filme explora temas de lealdade, família e a cultura automotiva underground, culminando em uma emocionante perseguição final que testa os limites de todos os envolvidos.</p>
+            
+            <p>Lançado em 2001, <span class="highlight">Velozes e Furiosos</span> se tornou um sucesso inesperado, dando início a uma das franquias mais lucrativas da história do cinema.</p>
+        </section>
+        
+        <section class="facts">
+            <div class="fact-card">
+                <h3>Curiosidades</h3>
+                <p>O filme foi inspirado em um artigo da revista Vibe sobre corridas de rua em Nova York.</p>
+                <p>Originalmente, o personagem de Dominic Toretto seria interpretado por Timothy Olyphant.</p>
+            </div>
+            
+            <div class="fact-card">
+                <h3>Impacto Cultural</h3>
+                <p>O filme popularizou a cultura "tuner" nos EUA.</p>
+                <p>Muitas das marcas de carro apresentadas no filme tiveram aumento nas vendas.</p>
+            </div>
+            
+            <div class="fact-card">
+                <h3>Trilha Sonora</h3>
+                <p>A trilha sonora mistura hip hop, rock e música eletrônica.</p>
+                <p>Inclui sucessos como "Riders on the Storm" do Snoop Dogg.</p>
+            </div>
+        </section>
     </div>
-  </header>
-
-  <!-- Banner -->
-  <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://www.themoviedb.org/t/p/original/6e0JSPojP2i5cF2gXB6LExyL9CK.jpg');">
-    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
-      <h2 class="text-4xl md:text-5xl font-bold text-white text-center">A adrenalina nunca para os fracos</h2>
-    </div>
-  </section>
-
-  <!-- Personagens -->
-  <section id="personagens" class="py-12 px-6 md:px-20 bg-gray-800">
-    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Personagens Principais</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Vin_Diesel_by_Gage_Skidmore_3.jpg" alt="Dominic Toretto" class="w-full h-64 object-cover rounded">
-        <h3 class="text-xl font-bold mt-4">Dominic Toretto</h3>
-        <p>Corajoso, leal e líder da equipe.</p>
-      </div>
-      <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Paul_Walker_2006.jpg" alt="Brian O'Conner" class="w-full h-64 object-cover rounded">
-        <h3 class="text-xl font-bold mt-4">Brian O'Conner</h3>
-        <p>Ex-policial e piloto habilidoso.</p>
-      </div>
-      <div class="bg-gray-700 p-4 rounded-lg shadow-md text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Michelle_Rodriguez_Cannes_2018.jpg" alt="Letty Ortiz" class="w-full h-64 object-cover rounded">
-        <h3 class="text-xl font-bold mt-4">Letty Ortiz</h3>
-        <p>Companheira de Dom, forte e destemida.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trailers -->
-  <section id="trailers" class="py-12 px-6 md:px-20 bg-gray-900">
-    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Trailers</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/aSiDu3Ywi8E" title="Trailer Velozes e Furiosos 7" allowfullscreen></iframe>
-      <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/FUK2kdPsBws" title="Trailer Velozes e Furiosos 9" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- Carros -->
-  <section id="carros" class="py-12 px-6 md:px-20 bg-gray-800">
-    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Carros Icônicos</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gray-700 p-4 rounded-lg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/1970_Dodge_Charger_RT_Hardtop.jpg" class="rounded mb-3" />
-        <h3 class="text-xl font-bold">Dodge Charger R/T 1970</h3>
-        <p>O carro clássico de Dominic Toretto.</p>
-      </div>
-      <div class="bg-gray-700 p-4 rounded-lg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Nissan_Skyline_GT-R_R34_N%C3%BCrburg.jpg" class="rounded mb-3" />
-        <h3 class="text-xl font-bold">Nissan Skyline GT-R R34</h3>
-        <p>Carro favorito de Brian O'Conner.</p>
-      </div>
-      <div class="bg-gray-700 p-4 rounded-lg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Toyota_Supra_MkIV_2JZ-GTE.jpg" class="rounded mb-3" />
-        <h3 class="text-xl font-bold">Toyota Supra MK4</h3>
-        <p>Famoso pelas cenas finais do primeiro filme.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black py-6 text-center text-sm text-gray-400">
-    © 2025 Fã-site Velozes e Furiosos.
-  </footer>
-
+    
+    <footer>
+        <p>© 2023 Site sobre Velozes e Furiosos 1 - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
